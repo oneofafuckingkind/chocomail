@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocomail Technicalities</title>
+    <link rel="stylesheet" href="technical.css">
+</head>
+<body>
+    <header>
+        <h1>Chocomail Technicalities</h1>
+        <p>Privacy-first email architecture with ephemeral storage and client-side caching</p>
+    </header>
+    <main>
+        <section id="secure-email">
+            <h2>Secure Email Service</h2>
+            <p>Our email service is designed around a <strong>decentralized message-delivery paradigm</strong> that prioritizes the users control over their own data. Unlike conventional  email providers, we operate as a <em>stateless transit layer</em> rather than a remotely-accessed storage platform.</p>
+            <p>When a message is sent to your address, it is immediately relayed through an encrypted SMTP pipeline directly to your chosen client. We have a variety of recommended clients, however, you will be able to configure Chocomail with any client of your choice.</p>
+            <p>We have a <em>variety of high-tier hack-domains</em> to choose from, as well as the typical domains with gTLDs.</p>
+            <h3>Key Technical Characteristics</h3>
+            <ul>
+                <li><strong>Ephemeral Transit Handling:</strong> Incoming mail is processed in volatile memory only for the short time necessary to perform routing and cryptographic verification. Messages are never stored on our servers for any longer than required.</li>
+                <li><strong>Client-Side Caching:</strong> Delivered mail resides exclusively within your chosen email client assuming the capability to do so. Once you clear that cache, your data is irreversibly lost.</li>
+                <li><strong>Cryptographic Integrity:</strong> All transfers utilize TLS 1.3+ encryption with Perfect Forward Secrecy, ensuring that even transient relay packets cannot be meaningfully intercepted or reconstructed.</li>
+            </ul>
+        </section>
+
+        <section id="tempmail">
+            <h2>Temporary Email Service (Tempmail)</h2>
+            <p>In addition to our secure email, we offer a <strong>temporary email service</strong> designed for ephemeral verification needs. These temporary addresses allow you to receive verification codes, one-time links, or confirmation emails without risking your personal email being exposed.</p>
+            <p>These temporary emails are only available on a small, strict selection of domains in order to maintain integrity of our larger domain list. This ensures our main domains are never blacklisted by any relevant services.</p>
+            <h3>How It Works</h3>
+            <ul>
+                <li>We generate temporary email addresses using complex regular expressions, ensuring compatibility with essentially any service.</li>
+                <li>Incoming messages are forwarded to your client once you request your tempmail be scanned. The inbox of these tempmails is held on our server for a short time-period, cleared after a small duration <em>or</em> once the content has been returned to you.</li>
+            </ul>
+            <h3>Delivery Channels</h3>
+            <p>Our temporary email service is accessible through multiple channels:</p>
+            <ul>
+                <li><strong>Software:</strong> Directly through our CLI-based Chocomail Software.</li>
+                <li><strong>Discord Bot:</strong> Receive temporary emails directly in your Discord DMs.</li>
+                <li><strong>Telegram Bot:</strong> Receive temporary emails securely via Telegram.</li>
+            </ul>
+            <p>This multi-channel accessibility ensures flexibility, privacy, and ease of use for temporary verification workflows while maintaining the same <strong>ephemeral, cache-based security guarantees</strong> as our main email service.</p>
+        </section>
+    </main>
+</body>
+</html>
