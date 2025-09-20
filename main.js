@@ -1,0 +1,19 @@
+document.querySelectorAll('.nav-buttons a').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const section = btn.dataset.section;
+    const box = document.getElementById('textbox');
+
+    if(section === 'about'){
+    box.innerHTML = 'Welcome to Chocomail!<br><br>' +
+    'Chocomail is a privacy-focused email platform created to ensure you maintain complete control over your data. Whether you need long-term secure messaging or a quick, disposable address for temporary use, Chocomail provides the tools necessary maintaining privacy without sacrificing convenience.<br><br>' +
+    'Our secure email service uses end-to-end encryption to ensure that only you and your intended recipients can read your messages. All transfers utilize TLS 1.3 with Perfect Forward Secrecy, making interception or reconstruction of your emails essentially impossible. Your data is held securely on our servers only for the time necessary; once this data has been forwarded to you, the data will only exist in the cache of your chosen client, then wiped off of our servers. Once your cache is cleared, your data is irreversibly lost.<br><br>' +
+    'Chocomail also offers temporary email addresses that expire after a short period. These disposable addresses protect your identity, prevent spam, and allow for safe one-time registrations or testing.<br><br>' +
+    'To learn more about the technicalities/inner-workings of Chocomail, <a href="/technical" target="_blank">click here</a>.';
+    } else if(section === 'contact'){
+      box.innerHTML = 'Session:<br>05258bd607bde035109b0084a640dc6f6b94f736b4c84b70d0a46b4c8abaec0612<br><br>-----BEGIN PGP PUBLIC KEY BLOCK-----<br><br>xsBNBGjBw00BCAC1s54+Rs2k2fGwyJP/zFkeyl7Und5axdOIwIVyyWwvGlAN<br>ZDoUN9MqpTUgSjBpcnu21BUKpISjw8oEnVo1Kgc9ETpXPUGtyM5VAH9xTJm5<br>A4A0vqcM6GeZAQbGEVP9ZW0uWyU+C3L9mSKu/rMi5JksmxNGuywXjVdA0wRT<br>42RWMjn9vgb+jBec7ObpTopwxuGHYQwzyaisgS4tXW2VwG55sc1NrE7Z3VL2<br>zmXYkQnZesXszVlDdKojsa8x835ny7lEy47N1abwIuxA1hDStqeOjDJfxKfp<br>H/p9rEGZQYkCB6qzucEpwlkSgYGMX1eV/GhrUfU5RDWI+F1SuNhGOcA7ABEB<br>AAHNEHMgPHNAaG9sb2NhdS5zdD7CwIoEEAEIAD4FgmjBw00ECwkHCAmQSaYQ<br>+UD1IrcDFQgKBBYAAgECGQECmwMCHgEWIQRtp9iKXNz2OQRZLdlJphD5QPUi<br>twAAxIEH/jO7tc2XwD5qxYz5tO42LdwscVhXcKWxQ8I2RdtUkOwPFqQkGcFy<br>f14LclYVcgtv0J5GjtM4j72VnWh+0r62CcS/TrZ3SkX7nV9KiapEAAbS1lbH<br>3akmx80DdzdrHkKmA6JrP9K4WymMfl0c8LfID6gLlkgzW04twHmdKo1GrYmH<br>A+0FzsfdR4d1HyiulqhEwLEVJytPYevyHj7WcqalHfPj5fSqRhC2nAJtmkFk<br>ATkEh3C5j62WVJhv+3O5Jry+w32g4jpeEn55EJiPgTINPmsC/0wcgaNvzEC4<br>kXVAu866wgQFkA8wXubPSxDgOtvn8zzX9Cfld1cSUYgmTr2H6lHOwE0EaMHD<br>TQEIAK/BNJWmjZaFHkxYaTnWDDumF4bzEJmDaa4PTpJ+E44MDoBOo93p0xdF<br>MPyy5WPurhZHF0+U9gaHi1RwQKR9wj5z2qLmXKZp22IuUr1b2Y8gnoSWrWf2<br>Gtr+A4atyT2OcuyMB9hjBzq5Mlsso2epESVwLyoHBC3Q8+EEWrNVRbyllFxP<br>4JIyU9MvWCxGYLOn8mso8Av5K8xvgyMjl3NlmzzQarVGLM2r1vlORL9M6fM2<br>PNvTKMdXQmmphZ/SCKn+anPhCwTfUVGbrGGPr3vtGSPHhfbdnJT4O0jQheXg<br>K9DE0++P07eGX3ymrHGubXfQsYXk54ImyK6arFOrjbt4Tl8AEQEAAcLAdgQY<br>AQgAKgWCaMHDTQmQSaYQ+UD1IrcCmwwWIQRtp9iKXNz2OQRZLdlJphD5QPUi<br>twAAH9oH/3wUVLQtwkT12SVteVj/LgFL28fBmB+ZizuC0T87c1+Fo6Wetsxb<br>ywE19hoHFRAp3PM33ZsXpyyyEibY7fkTIq8CN5GJ+J1qz32YQUg07SaF0fEr<br>8+7+UVHV7KzkpgtFRnfCIfB8D41G2SnfPcXlUzUNGruYSz31cSR4tqE/i8Cn<br>mkSIb0mnb8YbXb1vVfkedLQrmybrT8WHMsb4EggFFZ4t0TAH4Z9vQkwofJnD<br>lE4+UZvpgSM5A7nBCy5ngajqx7rJatEJhZ9o8RQ9nvDmjUZX6QvR0WbNSpD9<br>Sn4np3vg+Wbh38YJqPAPiF8k1hN6TfJegQkYHnvjXPoJubOtpWU=<br>=RV8V<br>-----END PGP PUBLIC KEY BLOCK-----';
+    } else if(section === 'login'){
+      box.innerHTML = 'Chocomail is currently private!<br><br>This does not mean we will never be public, but for the time being, Chocomail is an invite-only platform. Only friends of the developer may get an invite, at which how you use Chocomail determines how secure it is. Everything is secure if you make it secure.<br><br>~ D/S';
+    }
+  });
+});
