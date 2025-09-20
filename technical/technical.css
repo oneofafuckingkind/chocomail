@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+    background-image: url('assets/background.png');
+    background-repeat: repeat;
+    background-position: top left;
+    background-attachment: fixed;
+    color: #222;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1b1612;
+    color: #e0e0e0;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+header p {
+    margin: 0;
+    font-style: italic;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #eee5da;
+    box-shadow: 0 0 20px rgba(0,0,0,0.07);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #eee5da;
+}
+
+h2, h3 {
+    color: #111;
+}
+
+h2 {
+    margin-top: 2rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    margin-top: 1.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin: 0 0 1rem 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
